@@ -3,7 +3,7 @@ import scalafx.application.JFXApp.PrimaryStage
 import scalafx.geometry.Insets
 import scalafx.scene.Scene
 import scalafx.scene.control.Label
-import scalafx.scene.layout.{VBox, AnchorPane, BorderPane}
+import scalafx.scene.layout.{AnchorPane, BorderPane, VBox}
 import scalafxml.core.{FXMLLoader, FXMLView, NoDependencyResolver}
 import scalafx.Includes._
 import javafx.{scene => jfxs}

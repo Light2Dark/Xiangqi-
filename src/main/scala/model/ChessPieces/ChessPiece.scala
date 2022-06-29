@@ -11,7 +11,8 @@ import scalafx.scene.shape.Circle
 import utils.Maths._
 import utils.Teams.{Team, blackTeam, redTeam}
 import scalafx.scene.text.Text
-
+import model.ChessBoard
+ // src/main/scala/GameController.scala
 //abstract class ChessPiece(var x: Double, var y: Double, team: Team, text: String) extends Circle {
 //  layoutX = x
 //  layoutY = y
@@ -97,13 +98,18 @@ abstract class ChessPiece(var x: Double, var y: Double, team: Team, text: String
     println("click")
   }
 
+  // def cursor_=(v: Cursor): Unit
+
   this.onMouseReleased = (event: MouseEvent) => {
     // before moving, check if valid
 
     // reset
     resetPos
 
-    move(event.getSceneX - 190, event.getSceneY - 110)
+    if (correctSide) {
+      move(event.getSceneX - 190, event.getSceneY - 110)
+    }
+
   }
 
   this.onMouseDragged = (event: MouseEvent) => {
@@ -112,8 +118,31 @@ abstract class ChessPiece(var x: Double, var y: Double, team: Team, text: String
 
     val xMove = clamp(xPos, -5, 355)
     val yMove = clamp(yPos, 10, 400)
-    this.relocate(xMove, yMove)
+
+    if (correctSide) {
+      this.relocate(xMove, yMove)
+    }
   }
 
-  def move(moveX: Double, moveY: Double): Unit
+  def correctSide: Boolean = {
+    if ((ChessBoard.player1Turn && team == blackTeam) || (!ChessBoard.player1Turn && team == redTeam)) { // wrong player
+      false
+    } else {
+      true
+    }
+  }
+
+  def move(moveX: Double, moveY: Double): Unit = {
+    val deltaX = moveX - x
+    val deltaY = moveY - y
+    if (movePiece(deltaX, deltaY)) {
+      endTurn
+    }
+  }
+
+  def movePiece(deltaX: Double, deltaY: Double): Boolean // return whether piece has been moved successfully
+
+  def endTurn: Unit = {
+    ChessBoard.switchTurn
+  }
 }
