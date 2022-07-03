@@ -3,7 +3,7 @@ package model.ChessPieces
 import utils.Teams.{Team, blackTeam, redTeam}
 import utils.Maths._
 
-class Soldier(var _x: Double, var _y: Double, team: Team, private val text: String = "兵") extends ChessPiece(_x, _y, team, text){
+class Soldier(var _x: Double, var _y: Double, team: Team, private val text: String = "兵", var _rowIndex: Int, var _colIndex: Int) extends ChessPiece(_x, _y, team, text, _rowIndex, _colIndex) {
 
   def movePiece(deltaX: Double, deltaY: Double): Boolean = {
 

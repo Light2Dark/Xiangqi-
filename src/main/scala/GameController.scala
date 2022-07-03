@@ -7,18 +7,16 @@ import scalafx.scene.shape.{Circle, Rectangle}
 import scalafx.Includes._
 import scalafx.scene.media.{Media, MediaPlayer, MediaView}
 import utils.Teams.{blackTeam, redTeam}
+import utils.Maths._
 import scalafx.scene.Group
 
 @sfxml
 class GameController(private val chessBoard: AnchorPane) {
 
-  val xJump: Double = 44.0 // translation amount when a piece moves across one box
-  val yJump: Double = 36.0
+  val xTopLeft: Double = 10.0 // coordinates at top left of the board
+  val yTopLeft: Double = 5.0
 
-  val xTopLeft: Double = 17.0 // coordinates at top left of the board
-  val yTopLeft: Double = 32.0
-
-  var pieces: Array[ChessPiece] = Array()
+  private var pieces: Array[ChessPiece] = Array() // use array because random access is faster
   var player1Turn: Boolean = true // starts with player 1, if false, means player 2's turn
 
   // audio
@@ -35,9 +33,30 @@ class GameController(private val chessBoard: AnchorPane) {
 //    val piece = new Soldier(xTopLeft, yTopLeft + (i * yJump) + (i * 3.5), redTeam)
 //    pieces = pieces :+ piece
 //  }
-  pieces = pieces :+ new Soldier(xTopLeft, yTopLeft + 7 * yJump, redTeam)
-  pieces = pieces :+ new Soldier(xTopLeft, yTopLeft + 1 * yJump, blackTeam)
 
+  // red pieces, bottom side
+  // ROW INDEX and COL INDEX so that we can track the chess piece position and delete, move it etc.
+  // CHess board can iterate through pieces instead of having internal representation of pieces
+  pieces = pieces ++ Array(
+    new Soldier(xTopLeft + 0 * xJumpValue, yTopLeft + riverJump + 5 * yJumpValue, redTeam, _rowIndex = 3, _colIndex = 0),
+    new Soldier(xTopLeft + 2 * xJumpValue, yTopLeft + riverJump + 5 * yJumpValue, redTeam),
+    new Soldier(xTopLeft + 4 * xJumpValue, yTopLeft + riverJump + 5 * yJumpValue, redTeam),
+    new Soldier(xTopLeft + 6 * xJumpValue, yTopLeft + riverJump + 5 * yJumpValue, redTeam),
+    new Soldier(xTopLeft + 8 * xJumpValue, yTopLeft + riverJump + 5 * yJumpValue, redTeam)
+  )
+
+  // black pieces, top side
+  pieces = pieces ++ Array(
+    new Soldier(xTopLeft + 0 * xJumpValue, yTopLeft + 2 * yJumpValue, blackTeam),
+    new Soldier(xTopLeft + 2 * xJumpValue, yTopLeft + 2 * yJumpValue, blackTeam),
+    new Soldier(xTopLeft + 4 * xJumpValue, yTopLeft + 2 * yJumpValue, blackTeam),
+    new Soldier(xTopLeft + 6 * xJumpValue, yTopLeft + 2 * yJumpValue, blackTeam),
+    new Soldier(xTopLeft + 8 * xJumpValue, yTopLeft + 2 * yJumpValue, blackTeam)
+  )
+
+  for (row <- pieces) {
+
+  }
   //  chessBoard.children = Seq(
   //    new Circle() {
   //      layoutX=331.0

@@ -5,10 +5,14 @@ object Maths {
   def clamp(x: Double, min: Double, max: Double) = math.max(min, math.min(max, x))
 
   def xJumpValue: Double = {
-    45.0
+    42.8
   }
 
   def yJumpValue: Double = {
-    37.0
+    41.5
+  }
+
+  def riverJump: Double = {
+    62
   }
 }

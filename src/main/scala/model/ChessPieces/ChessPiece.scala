@@ -70,9 +70,12 @@ import model.ChessBoard
 ////  def die: Unit
 //}
 
-abstract class ChessPiece(var x: Double, var y: Double, team: Team, text: String) extends StackPane {
+abstract class ChessPiece(var x: Double, var y: Double, team: Team, text: String, private var _rowIndex: Int, private var _colIndex: Int) extends StackPane {
   this.layoutY = y
   this.layoutX = x
+
+  def rowIndex: Int = _rowIndex
+  def colIndex: Int = _colIndex
 
   val circle = new Circle()
   circle.radius = 20
@@ -124,12 +127,9 @@ abstract class ChessPiece(var x: Double, var y: Double, team: Team, text: String
     }
   }
 
+  // check which player is playing and able to move
   def correctSide: Boolean = {
-    if ((ChessBoard.player1Turn && team == blackTeam) || (!ChessBoard.player1Turn && team == redTeam)) { // wrong player
-      false
-    } else {
-      true
-    }
+    if ((ChessBoard.player1Turn && team == blackTeam) || (!ChessBoard.player1Turn && team == redTeam)) false else true
   }
 
   def move(moveX: Double, moveY: Double): Unit = {
