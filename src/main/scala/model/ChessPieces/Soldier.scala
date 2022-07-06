@@ -1,15 +1,13 @@
 package model.ChessPieces
 
+import model.ChessBoard
 import utils.Teams.{Team, blackTeam, redTeam}
 import utils.Maths._
 
-class Soldier(var _x: Double, var _y: Double, team: Team, private val text: String = "兵", var _rowIndex: Int, var _colIndex: Int) extends ChessPiece(_x, _y, team, text, _rowIndex, _colIndex) {
+class Soldier(var _x: Double, var _y: Double, team: Team, val text: String = "兵", _rowIndex: Int, _colIndex: Int) extends ChessPiece(_x, _y, team, text, _rowIndex, _colIndex) {
 
-  def movePiece(deltaX: Double, deltaY: Double): Boolean = {
-
+  def validMovement(deltaX: Double, deltaY: Double): Boolean = {
     if (team == redTeam) { // move upwards
-      println("red",deltaX, deltaY)
-
       if (deltaY > 0 || deltaY < -100) {
         println("soldier cannot move down")
         return false
@@ -18,16 +16,9 @@ class Soldier(var _x: Double, var _y: Double, team: Team, private val text: Stri
         return false
       }
 
-      println("moving up")
-      this.layoutY = y + -40
-      // println("before y",y)
-      y = this.layoutY.value
-      _y = y
-      return true
+      return true // satisfies the movement condition
 
-    } else if (team == blackTeam) { // black team goes down
-      println("black:", deltaX, deltaY)
-
+    } else if (team == blackTeam) {
       if (deltaY < 0) { // dragging upwards or not dragging downwards enough
         println("soldier cannot move up")
         return false
@@ -39,11 +30,52 @@ class Soldier(var _x: Double, var _y: Double, team: Team, private val text: Stri
         return false
       }
 
-      println("moving down")
+      return true // satisfies movement condition
+
+    } else {
+      println("ERROR, supposed to have team")
+      false
+    }
+  }
+
+  // check whether there is obstruction or not
+  // if there is, it should return (row, col) of obstructed piece
+
+
+  def movePiece(deltaX: Double, deltaY: Double): Boolean = {
+
+    if (!validMovement(deltaX, deltaY)) return false // if not valid dragging of piece
+
+    if (team == redTeam) { // move upwards
+      if (ChessBoard.obstruction(rowIndex - 1, colIndex) == (0,0)) { // no obstruction
+        println("red moving up " + rowIndex, colIndex)
+        this.layoutY = y + -40
+        y = this.layoutY.value
+        _y = y
+
+      } else { // there is obstruction
+        // get black team piece to delete
+        println("got obstructionss")
+        val piece = ChessBoard.pieces.filter(chessPiece => {
+          if (chessPiece.colIndex == colIndex && chessPiece.rowIndex == rowIndex - 1) true else false
+        })
+
+        ChessBoard.pieces = ChessBoard.pieces.filterNot(chessPiece => { // delete piece
+          if (chessPiece.colIndex == colIndex && chessPiece.rowIndex == rowIndex - 1) true else false
+        })
+      }
+
+      rowIndex = rowIndex - 1
+      true
+
+    } else if (team == blackTeam) { // black team goes down
+      println("black moving down " + "row: " + rowIndex + " col: " + colIndex)
       this.layoutY = y + 40
       y = this.layoutY.value
       _y = y
-      return true
+
+      rowIndex = rowIndex + 1 // moving down
+      true
 
     } else {
       println("ERROR, supposed to have team")

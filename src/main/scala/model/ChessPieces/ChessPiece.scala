@@ -70,21 +70,18 @@ import model.ChessBoard
 ////  def die: Unit
 //}
 
-abstract class ChessPiece(var x: Double, var y: Double, team: Team, text: String, private var _rowIndex: Int, private var _colIndex: Int) extends StackPane {
+abstract class ChessPiece(var x: Double, var y: Double, val team: Team, text: String, var rowIndex: Int, var colIndex: Int) extends StackPane {
   this.layoutY = y
   this.layoutX = x
 
-  def rowIndex: Int = _rowIndex
-  def colIndex: Int = _colIndex
-
   val circle = new Circle()
   circle.radius = 20
-  circle.fill = SandyBrown
+  circle.fill = BlanchedAlmond
   circle.strokeWidth = 2.0
   if (team == redTeam) {
-    circle.stroke <== when(hover) choose Yellow otherwise Red
+    circle.stroke <== when(hover) choose DarkBlue otherwise Red
   } else if (team == blackTeam) {
-    circle.stroke <== when(hover) choose Yellow otherwise Black
+    circle.stroke <== when(hover) choose DarkGray otherwise Black
   }
 
   val pieceText = new Text(0, 0, text)
@@ -131,6 +128,8 @@ abstract class ChessPiece(var x: Double, var y: Double, team: Team, text: String
   def correctSide: Boolean = {
     if ((ChessBoard.player1Turn && team == blackTeam) || (!ChessBoard.player1Turn && team == redTeam)) false else true
   }
+
+
 
   def move(moveX: Double, moveY: Double): Unit = {
     val deltaX = moveX - x
