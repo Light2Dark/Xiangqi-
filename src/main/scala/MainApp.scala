@@ -34,6 +34,6 @@ object MainApp extends JFXApp {
     roots.setCenter(viewRoots)
   }
 
-  val mainView = getClass.getResource("view/Game.fxml")
+  val mainView = getClass.getResource("view/MainView.fxml")
   showView(mainView)
 }

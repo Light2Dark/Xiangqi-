@@ -10,8 +10,8 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="54.0" layoutY="57.0" stroke="BLACK" strokeType="INSIDE" width="62.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="54.0" layoutY="433.0" stroke="BLACK" strokeType="INSIDE" width="62.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c3e2ff" height="60.0" layoutX="54.0" layoutY="57.0" stroke="BLACK" strokeType="INSIDE" width="62.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff989a" height="60.0" layoutX="54.0" layoutY="433.0" stroke="BLACK" strokeType="INSIDE" width="62.0" />
       <Pane layoutX="176.0" layoutY="57.0" prefHeight="448.0" prefWidth="406.0">
          <children>
             <ImageView fitHeight="448.0" fitWidth="407.0" layoutX="-1.0" pickOnBounds="true">
@@ -22,12 +22,12 @@
             <AnchorPane fx:id="chessBoard" prefHeight="448.0" prefWidth="407.0" />
          </children>
       </Pane>
-      <Text layoutX="53.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 2">
+      <Text fx:id="playerTwoName" layoutX="53.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 2">
          <font>
             <Font name="Bookman Old Style Bold" size="15.0" />
          </font>
       </Text>
-      <Text layoutX="53.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 1">
+      <Text fx:id="playerOneName" layoutX="53.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 1">
          <font>
             <Font name="Bookman Old Style Bold" size="15.0" />
          </font>
@@ -37,7 +37,17 @@
             <Image url="@../resources/images/chinesedragon.png" />
          </image>
       </ImageView>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="604.0" layoutY="148.0" stroke="BLACK" strokeType="INSIDE" width="114.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="604.0" layoutY="343.0" stroke="BLACK" strokeType="INSIDE" width="114.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2d3047" height="60.0" layoutX="604.0" layoutY="148.0" stroke="#1100ff" strokeType="INSIDE" strokeWidth="2.0" width="114.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2d3047" height="60.0" layoutX="604.0" layoutY="343.0" stroke="#d10000" strokeType="INSIDE" strokeWidth="2.0" width="114.0" />
+      <Text fx:id="blackTimer" fill="WHITE" layoutX="625.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12:30" textAlignment="CENTER">
+         <font>
+            <Font name="Bookman Old Style Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="redTimer" fill="WHITE" layoutX="625.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12:30" textAlignment="CENTER">
+         <font>
+            <Font name="Bookman Old Style Bold" size="24.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

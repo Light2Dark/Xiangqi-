@@ -74,7 +74,7 @@ abstract class ChessPiece(var x: Double, var y: Double, val team: Team, text: St
   this.layoutY = y
   this.layoutX = x
 
-  val circle = new Circle()
+  private val circle = new Circle()
   circle.radius = 20
   circle.fill = BlanchedAlmond
   circle.strokeWidth = 2.0

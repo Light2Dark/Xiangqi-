@@ -46,6 +46,10 @@ object ChessBoard {
 //    Array("Sr", "O", "Sr", "O", "Sr", "O", "Sr", "O", "Sr", "O"),
 //  )
   // board foreach { row => row foreach print; println }
+  val playerOne: Player = new Player()
+  val playerTwo: Player = new Player()
+  val timerPlayerOne: Timer = new Timer()
+  val timerPlayerTwo: Timer = new Timer()
 
   // ROW INDEX and COL INDEX so that we can track the chess piece position and delete, move it etc.
   var pieces: List[ChessPiece] = List() // use list as we will iterate through the list often to check valid moves, obstruction etc.

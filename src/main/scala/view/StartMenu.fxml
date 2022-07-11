@@ -45,7 +45,7 @@
                   <Font name="Bookman Old Style Bold" size="16.0" />
                </font>
             </Text>
-            <TextField prefHeight="30.0" prefWidth="186.0" />
+            <TextField fx:id="playerOneInput" prefHeight="30.0" prefWidth="186.0" />
          </children>
       </HBox>
       <HBox alignment="CENTER" layoutX="431.0" layoutY="235.0" prefHeight="31.0" prefWidth="224.0" spacing="14.0">
@@ -55,7 +55,7 @@
                   <Font name="Bookman Old Style Bold" size="16.0" />
                </font>
             </Text>
-            <TextField prefHeight="30.0" prefWidth="186.0" />
+            <TextField fx:id="playerTwoInput" prefHeight="30.0" prefWidth="186.0" />
          </children>
       </HBox>
       <Text layoutX="95.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Your Avatar">

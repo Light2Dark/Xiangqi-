@@ -9,12 +9,29 @@ import scalafx.scene.media.{Media, MediaPlayer, MediaView}
 import utils.Teams.{blackTeam, redTeam}
 import utils.Maths._
 import scalafx.scene.Group
-import model.ChessBoard
+import model.{ChessBoard, Player, Timer, TimerPanel}
+import scalafx.scene.text.Text
 
 @sfxml
-class GameController(private val chessBoard: AnchorPane) {
+class GameController(private val chessBoard: AnchorPane, private val playerOneName: Text, private val playerTwoName: Text, val redTimer: Text, val blackTimer: Text) {
 
+  val playerOneTimer: Timer = ChessBoard.timerPlayerOne
+  val playerTwoTimer: Timer = ChessBoard.timerPlayerTwo
+
+  playerOneName.text.value = ChessBoard.playerOne.name
+  playerTwoName.text.value = ChessBoard.playerTwo.name
+
+  // redTimer.text <== playerOneTimer.timeString()
+  playerOneTimer.startTimer()
+
+  if (ChessBoard.player1Turn) {
+    TimerPanel.updateTime(redTimer, redTeam)
+  }
+
+
+  // placing all chess pieces
   chessBoard.children = ChessBoard.pieces
+
 
   // audio
 //  val audio = new Media(getClass.getResource("../musicResource/battlechess.mp3").toURI.toString)
