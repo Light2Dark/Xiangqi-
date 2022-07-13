@@ -142,6 +142,16 @@ object ChessBoard {
 
   def switchTurn = {
     _player1Turn = !_player1Turn
+
+    if (timerPlayerOne.running) {
+      timerPlayerOne.stopTimer()
+      timerPlayerTwo.startTimer()
+      TimerPanel.updateTime(blackTeam)
+    } else if (timerPlayerTwo.running) {
+      timerPlayerOne.startTimer()
+      timerPlayerTwo.stopTimer()
+      TimerPanel.updateTime(redTeam)
+    }
   }
 
 

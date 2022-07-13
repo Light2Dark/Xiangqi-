@@ -1,6 +1,6 @@
 package model
 
-import scalafx.beans.property.{LongProperty, StringProperty}
+import scalafx.beans.property.{BooleanProperty, LongProperty, StringProperty}
 
 
 // code inspired by https://github.com/andyjiang3/chinese-chess/blob/master/GameLogic/Timer.java
@@ -14,18 +14,18 @@ class Timer {
   def running: Boolean = _running // getter
 
   def startTimer(): Unit = {
-    startTime = System.nanoTime()
+    // startTime = System.nanoTime()
     _running = true
   }
 
   def stopTimer(): Unit = {
-    stopTime = System.nanoTime()
+    // stopTime = System.nanoTime()
     _running = false
   }
 
   def timesUp(time: Double) = {
     if (time <= 0) {
-      println("TIMES UPP!")
+      println("TIMES UPP! You have lost")
     }
   }
 

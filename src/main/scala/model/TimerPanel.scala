@@ -1,6 +1,6 @@
 package model
 
-import scalafx.beans.property.StringProperty
+import scalafx.beans.property.BooleanProperty
 import scalafx.scene.text.Text
 import utils.Teams
 import utils.Teams.Team
@@ -13,11 +13,16 @@ object TimerPanel extends Thread {
   var thread = new Thread()
   val playerOneTimer: Timer = ChessBoard.timerPlayerOne
   val playerTwoTimer: Timer = ChessBoard.timerPlayerTwo
+  var redTimerText: Text = new Text()
+  var blackTimerText: Text = new Text()
   // ChessBoard.player1Turn
 
+  val change = BooleanProperty(playerOneTimer.running)
+
   // update the label time
-  def updateTime(text: Text, team: Team) = {
+  def updateTime(team: Team) = {
     val timer = if (team == Teams.redTeam) playerOneTimer else playerTwoTimer
+    val text = if (team == Teams.redTeam) redTimerText else blackTimerText
 
     thread = new Thread(() => {
       while(timer.running) {
