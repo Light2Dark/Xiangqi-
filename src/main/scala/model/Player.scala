@@ -7,9 +7,4 @@ class Player(var name: String) {
 
   var checkmateStatus: Boolean = false
   var timeElapsed: Long = 0
-
-  // inspired from https://github.com/andyjiang3/chinese-chess/blob/master/GameLogic/Player.java
-  val timer = new Timer()
-
-
 }

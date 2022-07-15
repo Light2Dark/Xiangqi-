@@ -59,8 +59,18 @@
             </ImageView>
          </graphic>
          <font>
-            <Font name="Avenir Next LT W04 Demi" size="12.0" />
+            <Font name="Bookman Old Style" size="12.0" />
          </font>
       </Button>
+      <ImageView fitHeight="53.0" fitWidth="62.0" layoutX="58.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/dragLeft.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="62.0" layoutX="58.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/dragRight.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

@@ -1,9 +1,10 @@
 import model.{ChessBoard, Player}
-import scalafx.scene.control.{Alert, Button, TextField}
+import scalafx.collections.ObservableBuffer
+import scalafx.scene.control.{Alert, Button, ChoiceBox, TextField}
 import scalafxml.core.macros.sfxml
 
 @sfxml
-class StartMenuController(private val startGameButton: Button, val playerOneInput: TextField, val playerTwoInput: TextField) {
+class StartMenuController(private val startGameButton: Button, val playerOneInput: TextField, val playerTwoInput: TextField, val choiceBox: ChoiceBox[String]) {
 
   def nullChecking (x : String): Boolean = x == null || x.length == 0
 
@@ -41,4 +42,13 @@ class StartMenuController(private val startGameButton: Button, val playerOneInpu
     }
   }
 
+  // Choice Box putting in options
+  choiceBox.items = ObservableBuffer("15 minutes", "30 minutes", "60 minutes")
+  choiceBox.selectionModel().selectFirst()
+
+  choiceBox.getSelectionModel.selectedItemProperty.addListener((options, oldValue, newValue) => {
+    val timeString = newValue.split(" ")
+    val time: Double = timeString(0).toDouble
+    ChessBoard.changeTimer(time) // in seconds
+  })
 }

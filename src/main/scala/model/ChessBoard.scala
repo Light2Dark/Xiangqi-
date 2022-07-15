@@ -48,8 +48,16 @@ object ChessBoard {
   // board foreach { row => row foreach print; println }
   val playerOne: Player = new Player()
   val playerTwo: Player = new Player()
-  val timerPlayerOne: Timer = new Timer()
-  val timerPlayerTwo: Timer = new Timer()
+
+  // time limit settings
+  var timeLimit: Double = 15 // default timeLimit
+  var timerPlayerOne: Timer = new Timer(timeLimit)
+  var timerPlayerTwo: Timer = new Timer(timeLimit)
+
+  def changeTimer(timeLimit: Double) = {
+    timerPlayerOne = new Timer(timeLimit)
+    timerPlayerTwo = new Timer(timeLimit)
+  }
 
   // ROW INDEX and COL INDEX so that we can track the chess piece position and delete, move it etc.
   var pieces: List[ChessPiece] = List() // use list as we will iterate through the list often to check valid moves, obstruction etc.

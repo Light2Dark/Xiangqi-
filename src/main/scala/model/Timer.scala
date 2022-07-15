@@ -1,14 +1,8 @@
 package model
 
-import scalafx.beans.property.{BooleanProperty, LongProperty, StringProperty}
-
-
 // code inspired by https://github.com/andyjiang3/chinese-chess/blob/master/GameLogic/Timer.java
-class Timer {
-  private var startTime: Long = 0
-  private var stopTime: Long = 0
+class Timer(val timeLimit: Double) {
   private var _running: Boolean = false
-  val timeLimit: Double = 15.00
   private var currentTime: Double = timeLimit
 
   def running: Boolean = _running // getter

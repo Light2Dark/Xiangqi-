@@ -64,12 +64,12 @@
                   <Font name="Bookman Old Style Bold" size="18.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="372.0" text="How To Play">
+            <Button mnemonicParsing="false" onAction="#handlePlay" prefHeight="34.0" prefWidth="372.0" text="How To Play">
                <font>
                   <Font name="Bookman Old Style Bold" size="18.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="372.0" text="Settings">
+            <Button mnemonicParsing="false" onAction="#handleExit" prefHeight="34.0" prefWidth="372.0" text="Exit">
                <font>
                   <Font name="Bookman Old Style Bold" size="18.0" />
                </font>
