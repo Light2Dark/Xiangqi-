@@ -1,4 +1,4 @@
-import model.{ChessBoard, Player}
+import model.{ChessBoard, Player, TimerPanel}
 import scalafx.collections.ObservableBuffer
 import scalafx.scene.control.{Alert, Button, ChoiceBox, TextField}
 import scalafxml.core.macros.sfxml
@@ -33,7 +33,7 @@ class StartMenuController(private val startGameButton: Button, val playerOneInpu
   }
 
   def startGame() = {
-    val resource = getClass.getResource("view/Game.fxml")
+    val resource = getClass.getResource("view/Game3.fxml") // ori was Game!!
 
     if (hasValidInput()) {
       ChessBoard.playerOne.name = playerOneInput.text.value

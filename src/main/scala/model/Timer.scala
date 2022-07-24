@@ -1,9 +1,8 @@
 package model
 
-// code inspired by https://github.com/andyjiang3/chinese-chess/blob/master/GameLogic/Timer.java
-class Timer(val timeLimit: Double) {
+class Timer(private var _timeLimit: Double) {
   private var _running: Boolean = false
-  private var currentTime: Double = timeLimit
+  private var currentTime: Double = _timeLimit
 
   def running: Boolean = _running // getter
 
@@ -23,6 +22,16 @@ class Timer(val timeLimit: Double) {
     }
   }
 
+  // setter for time limit
+  def timeLimit(timeLimit: Double) = {
+    _timeLimit = timeLimit
+    currentTime = timeLimit
+  }
+
+  def getTimeLimit() = {
+    _timeLimit
+  }
+
 //  def timeTaken(): Long = {
 //    if (running) {
 //      System.nanoTime() - startTime / 1000000
@@ -31,13 +40,24 @@ class Timer(val timeLimit: Double) {
 //    }
 //  }
 
+  def timeToString(time: Double = currentTime) = {
+    // https://www.learnjavacoding.com/convert-seconds-to-hours/
+    val timeString = time.toString.split("\\.")
+    var totalSeconds: Int = timeString(0).toInt * 60 - 40 + timeString(1).substring(0,2).toInt //(0.5 + currentTime * 60).asInstanceOf[Int]
+
+    val minutes = (totalSeconds % 3600) / 60
+    val seconds = totalSeconds % 60
+
+    minutes + ":" + seconds
+  }
+
   def time: String = {
     currentTime = currentTime - 0.01
     timesUp(currentTime)
 
     // https://www.learnjavacoding.com/convert-seconds-to-hours/
     val timeString = currentTime.toString.split("\\.")
-    var totalSeconds: Int = timeString(0).toInt * 60 + timeString(1).substring(0,2).toInt //(0.5 + currentTime * 60).asInstanceOf[Int]
+    var totalSeconds: Int = timeString(0).toInt * 60 - 40 + timeString(1).substring(0,2).toInt //(0.5 + currentTime * 60).asInstanceOf[Int]
 
     val minutes = (totalSeconds % 3600) / 60
     val seconds = totalSeconds % 60

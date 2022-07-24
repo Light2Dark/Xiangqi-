@@ -1,36 +1,53 @@
 package model.ChessPieces
 
-import model.ChessBoard
 import utils.Teams.{Team, blackTeam, redTeam}
 import utils.Maths._
 
-class Soldier(var _x: Double, var _y: Double, team: Team, val text: String = "兵", _rowIndex: Int, _colIndex: Int) extends ChessPiece(_x, _y, team, text, _rowIndex, _colIndex) {
+import scala.collection.mutable
 
-  def validMovement(deltaX: Double, deltaY: Double): Boolean = {
+//import scala.collection.immutable.HashMap
+import scala.collection.mutable.HashMap
+
+class Soldier(_x: Double, _y: Double, team: Team, val text: String = "兵", _rowIndex: Int, _colIndex: Int) extends ChessPiece(_x, _y, team, text, _rowIndex, _colIndex) {
+
+    var passedRiver: Boolean = false
+    xDragBoundary = mutable.HashMap("min" -> 10.0, "max" -> 100.0)
+    yDragBoundary = mutable.HashMap("min" -> 10 , "max" -> 60)
+
+    def validDragging(deltaX: Double, deltaY: Double): Boolean = {
     if (team == redTeam) { // move upwards
-      if (deltaY > 0 || deltaY < -100) {
-        println("soldier cannot move down")
-        return false
-      } else if (deltaY < -100) {
-        println("not dragging up enough")
+      if (deltaY > 10) {
+        println("soldier cannot move backwards")
         return false
       }
 
-      return true // satisfies the movement condition
+      if (!passedRiver) {
+        if (deltaY > - yDragBoundary("max")) return true else return false
+      } else {
+        if (deltaY > - yDragBoundary("max") || Math.abs(deltaX) < xDragBoundary("max")) return true else return false
+      }
+
+      true // satisfies the movement condition
 
     } else if (team == blackTeam) {
-      if (deltaY < 0) { // dragging upwards or not dragging downwards enough
+      if (deltaY < -10) { // dragging upwards or not dragging downwards enough
         println("soldier cannot move up")
-        return false
-      } else if (deltaY < 40) {
-        println("not dragging down enough")
-        return false
-      } else if (deltaY > 80) {
-        println("dragging down too much")
         return false
       }
 
-      return true // satisfies movement condition
+      if (!passedRiver) {
+        if (deltaY < 40) {
+          println("not dragging down enough")
+          return false
+        } else if (deltaY > 80) {
+          println("dragging down too much")
+          return false
+        }
+      } else {
+        if (deltaY < 80 && deltaY > 40 || Math.abs(deltaX) < xDragBoundary("max")) return true else return false
+      }
+
+      true // satisfies movement condition
 
     } else {
       println("ERROR, supposed to have team")
@@ -41,40 +58,77 @@ class Soldier(var _x: Double, var _y: Double, team: Team, val text: String = "�
   // check whether there is obstruction or not
   // if there is, it should return (row, col) of obstructed piece
 
+  def moveLeftRight(deltaX: Double): Boolean = {
+    if (deltaX > 40) { // moving right
+      if (captureAndMove(colIndex + 1, rowIndex)) {
+        colIndex = colIndex + 1
+        this.layoutX = x + xMove
+        true
+      } else false
+
+    } else if (deltaX < -40) { // moving left
+      if (captureAndMove(colIndex - 1, rowIndex)) {
+        colIndex = colIndex - 1
+        this.layoutX = x - xMove
+        true
+      } else false
+    } else false
+  }
+
 
   def movePiece(deltaX: Double, deltaY: Double): Boolean = {
 
-    if (!validMovement(deltaX, deltaY)) return false // if not valid dragging of piece
+    if (!validDragging(deltaX, deltaY)) return false // if not valid dragging of piece
 
-    if (team == redTeam) { // move upwards
-      if (ChessBoard.obstruction(rowIndex - 1, colIndex) == (0,0)) { // no obstruction
-        println("red moving up " + rowIndex, colIndex)
-        this.layoutY = y + -40
-        y = this.layoutY.value
-        _y = y
+    if (team == redTeam) {
+      if (passedRiver) {
+        if (!moveLeftRight(deltaX)) { // not moving left or right
+          if (deltaY < 20) { // moving upwards
+            if (captureAndMove(colIndex, rowIndex - 1)) {
+              rowIndex -= 1
+              this.layoutY = y - yMove
+            } else return false
+          } else return false
+        }
 
-      } else { // there is obstruction
-        // get black team piece to delete
-        println("got obstructionss")
-        val piece = ChessBoard.pieces.filter(chessPiece => {
-          if (chessPiece.colIndex == colIndex && chessPiece.rowIndex == rowIndex - 1) true else false
-        })
-
-        ChessBoard.pieces = ChessBoard.pieces.filterNot(chessPiece => { // delete piece
-          if (chessPiece.colIndex == colIndex && chessPiece.rowIndex == rowIndex - 1) true else false
-        })
+      } else if (!passedRiver) {
+        if (deltaY < 0) { // moving upwards
+          if (captureAndMove(colIndex, rowIndex - 1)) {
+            rowIndex -= 1
+            if (rowIndex == 4) passedRiver = true
+            this.layoutY = y - yMove
+          } else return false
+        } else return false
       }
 
-      rowIndex = rowIndex - 1
+      y = this.layoutY.value
+      x = this.layoutX.value
       true
 
     } else if (team == blackTeam) { // black team goes down
-      println("black moving down " + "row: " + rowIndex + " col: " + colIndex)
-      this.layoutY = y + 40
-      y = this.layoutY.value
-      _y = y
+      if (passedRiver) {
+        if (!moveLeftRight(deltaX)) {
+          if (deltaY > 0) { // moving downwards
+            if (captureAndMove(colIndex, rowIndex + 1)) {
+              rowIndex += 1
+              this.layoutY = y + yMove
+            } else return false
+          } else return false
+        }
 
-      rowIndex = rowIndex + 1 // moving down
+      } else if (!passedRiver) {
+        if (deltaY > 0) { // moving downwards
+          if (captureAndMove(colIndex, rowIndex + 1)) {
+            println("moving")
+            rowIndex += 1
+            if (rowIndex == 5) passedRiver = true
+            this.layoutY = y + yMove
+          } else return false
+        } else return false
+      }
+
+      y = this.layoutY.value
+      x = this.layoutX.value
       true
 
     } else {

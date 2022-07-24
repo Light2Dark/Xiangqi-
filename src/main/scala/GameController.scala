@@ -18,8 +18,8 @@ import java.io.File
 @sfxml
 class GameController(private val chessBoard: AnchorPane, private val playerOneName: Text, private val playerTwoName: Text, val redTimer: Text, val blackTimer: Text) {
 
-  val playerOneTimer: Timer = ChessBoard.timerPlayerOne
-  val playerTwoTimer: Timer = ChessBoard.timerPlayerTwo
+  val playerOneTimer: Timer = ChessBoard.playerOne.timer
+  val playerTwoTimer: Timer = ChessBoard.playerTwo.timer
 
   playerOneName.text.value = ChessBoard.playerOne.name
   playerTwoName.text.value = ChessBoard.playerTwo.name
@@ -27,20 +27,27 @@ class GameController(private val chessBoard: AnchorPane, private val playerOneNa
   // setting timertext in TimerPanel
   TimerPanel.redTimerText = redTimer
   TimerPanel.blackTimerText = blackTimer
+  blackTimer.text = playerTwoTimer.timeToString()
 
   // redTimer.text <== playerOneTimer.timeString()
   playerOneTimer.startTimer()
 
-  TimerPanel.updateTime(redTeam)
+  def updateTimerPanel() = { // interaction with timer panel, to update time, reset (future feature)
+    TimerPanel.updateTime(redTeam)
+  }
+  updateTimerPanel()
 
   // placing all chess pieces
   chessBoard.children = ChessBoard.pieces
+  ChessBoard.board = chessBoard
+
 
   // audio
-//  val audio = new Media(getClass.getResource("../musicResource/battlechess.mp3").toURI.toString)
+//  val audio = new Media(getClass.getResource("resources/music/battlechess.mp3").toURI.toString)
 //  val musicPlayer = new MediaPlayer(media = audio)
 //  musicPlayer.setCycleCount(MediaPlayer.Indefinite)
 //  musicPlayer.play()
+
 //  for (i <- 0 to 8) {
 //    val piece = new Horse(xTopLeft + (i * xJump) + i, yTopLeft, redTeam)
 //    pieces = pieces :+ piece

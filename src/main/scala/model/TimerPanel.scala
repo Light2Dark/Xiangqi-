@@ -11,17 +11,19 @@ import utils.Teams.Team
 
 object TimerPanel extends Thread {
   var thread = new Thread()
-  val playerOneTimer: Timer = ChessBoard.timerPlayerOne
-  val playerTwoTimer: Timer = ChessBoard.timerPlayerTwo
   var redTimerText: Text = new Text()
   var blackTimerText: Text = new Text()
   // ChessBoard.player1Turn
 
-  val change = BooleanProperty(playerOneTimer.running)
+//  val change = BooleanProperty(playerOneTimer.running)
+
+  // initial time setup
+  redTimerText.text = ChessBoard.playerOne.timer.time
+  blackTimerText.text = ChessBoard.playerTwo.timer.time
 
   // update the label time
   def updateTime(team: Team) = {
-    val timer = if (team == Teams.redTeam) playerOneTimer else playerTwoTimer
+    val timer = if (team == Teams.redTeam) ChessBoard.playerOne.timer else ChessBoard.playerTwo.timer
     val text = if (team == Teams.redTeam) redTimerText else blackTimerText
 
     thread = new Thread(() => {

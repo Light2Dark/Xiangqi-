@@ -16,3 +16,4 @@ class RootController {
     System.exit(0)
   }
 }
+

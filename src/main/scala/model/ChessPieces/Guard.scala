@@ -6,5 +6,9 @@ class Guard(_x: Double, _y: Double, team: Team, private val text: String = "仕"
   def movePiece(deltaX: Double, deltaY: Double): Boolean = {
     false
   }
+
+  def validDragging(deltaX: Double, deltaY: Double): Boolean = {
+    false
+  }
 }
 
