@@ -35,4 +35,5 @@ To run this project, several things are needed for installation
 ## Contributions
 
 Contributions are always welcome!
-This game lacks game logic for all chess pieces and checkmate logic.
+
+This game lacks game logic for some chess pieces and checkmate logic.
