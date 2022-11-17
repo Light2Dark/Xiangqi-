@@ -1,0 +1,4 @@
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\src\main\scala\model\ChessPieces\Horse.scala:6:26: imported `ChessPiece` is permanently hidden by definition of class ChessPiece in package ChessPieces[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport model.ChessPieces.ChessPiece[0m
+[0m[[0m[33mwarn[0m] [0m[0m                         ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

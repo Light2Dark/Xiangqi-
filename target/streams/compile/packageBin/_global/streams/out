@@ -1,0 +1,183 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\xiangqi_2.12-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GameController$Controller$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\GameController$Controller$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GameController$Controller.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\GameController$Controller.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GameController.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\GameController.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HowToPlayController$Controller$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\HowToPlayController$Controller$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HowToPlayController$Controller$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\HowToPlayController$Controller$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HowToPlayController$Controller.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\HowToPlayController$Controller.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HowToPlayController.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\HowToPlayController.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MainApp$$anon$1$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\MainApp$$anon$1$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MainApp$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\MainApp$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MainApp$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\MainApp$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MainApp$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\MainApp$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MainApp.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\MainApp.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MainViewController$Controller.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\MainViewController$Controller.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MainViewController.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\MainViewController.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\ChessBoard$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model\ChessBoard$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\ChessBoard.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model\ChessBoard.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\ChessPieces[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model\ChessPieces[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\ChessPieces\Cannon$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model\ChessPieces\Cannon$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\ChessPieces\Cannon.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model\ChessPieces\Cannon.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\ChessPieces\Chariot$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model\ChessPieces\Chariot$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\ChessPieces\Chariot.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model\ChessPieces\Chariot.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\ChessPieces\ChessPiece.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model\ChessPieces\ChessPiece.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\ChessPieces\Elephant$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model\ChessPieces\Elephant$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\ChessPieces\Elephant.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model\ChessPieces\Elephant.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\ChessPieces\General$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model\ChessPieces\General$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\ChessPieces\General.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model\ChessPieces\General.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\ChessPieces\Guard$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model\ChessPieces\Guard$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\ChessPieces\Guard.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model\ChessPieces\Guard.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\ChessPieces\Horse$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model\ChessPieces\Horse$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\ChessPieces\Horse.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model\ChessPieces\Horse.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\ChessPieces\Soldier$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model\ChessPieces\Soldier$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\ChessPieces\Soldier.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model\ChessPieces\Soldier.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\Player.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model\Player.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\Screencapture$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model\Screencapture$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\Screencapture.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model\Screencapture.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\Timer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model\Timer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\TimerPanel$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model\TimerPanel$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\TimerPanel.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\model\TimerPanel.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images\bg-img.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images\bg-img.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images\blackteam.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images\blackteam.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images\camera.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images\camera.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images\chessboard.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images\chessboard.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images\chessboard.svg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images\chessboard.svg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images\chessboard2.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images\chessboard2.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images\chessboard3.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images\chessboard3.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images\chinesedragon.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images\chinesedragon.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images\chinesedragonwhite.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images\chinesedragonwhite.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images\dragLeft.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images\dragLeft.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images\dragRight.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images\dragRight.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images\howtoplay[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images\howtoplay[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images\howtoplay\howtoplay1.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images\howtoplay\howtoplay1.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images\howtoplay\howtoplay2.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images\howtoplay\howtoplay2.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images\howtoplay\howtoplay3.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images\howtoplay\howtoplay3.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images\howtoplay\howtoplay4.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images\howtoplay\howtoplay4.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images\howtoplay\howtoplay5.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images\howtoplay\howtoplay5.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images\howtoplay\howtoplay6.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images\howtoplay\howtoplay6.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images\howtoplay\howtoplay7.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images\howtoplay\howtoplay7.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images\howtoplay\howtoplay8.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images\howtoplay\howtoplay8.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images\logo.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images\logo.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images\redteam.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images\redteam.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images\woodbg.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images\woodbg.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\images\xiangqiboard.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\images\xiangqiboard.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\music[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\music[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\music\battlechess.m4a[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\music\battlechess.m4a[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\music\battlechess.mp3[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\music\battlechess.mp3[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\music\battlechess.wav[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\music\battlechess.wav[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resources\music\guzheng.mp3[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\resources\music\guzheng.mp3[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RootController$Controller.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\RootController$Controller.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RootController.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\RootController.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StartMenuController$Controller$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\StartMenuController$Controller$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StartMenuController$Controller.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\StartMenuController$Controller.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	StartMenuController.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\StartMenuController.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	utils[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\utils[0m
+[0m[[0m[0mdebug[0m] [0m[0m	utils\Maths$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\utils\Maths$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	utils\Maths.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\utils\Maths.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	utils\Teams$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\utils\Teams$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	utils\Teams.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\utils\Teams.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	view[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\view[0m
+[0m[[0m[0mdebug[0m] [0m[0m	view\CircleTest.fxml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\view\CircleTest.fxml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	view\Game.fxml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\view\Game.fxml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	view\Game3.fxml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\view\Game3.fxml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	view\GameAlt.fxml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\view\GameAlt.fxml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	view\HowToPlay.fxml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\view\HowToPlay.fxml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	view\MainView.fxml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\view\MainView.fxml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	view\RootLayout.fxml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\view\RootLayout.fxml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	view\StartMenu.fxml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\view\StartMenu.fxml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	view\styles.css[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\User\Shahmir\Documents\UNI\Sem 6\OOP\Assignment\Xiangqi\target\scala-2.12\classes\view\styles.css[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
